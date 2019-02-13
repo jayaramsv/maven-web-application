@@ -85,18 +85,6 @@
 
 	</dependencies>
 	
-	<distributionManagement>
-	    <repository>
-	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://ec2-18-222-248-240.us-east-2.compute.amazonaws.com/mithuntechnologies/repository/flipkart-releases/</url>
-	    </repository>
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://ec2-18-222-248-240.us-east-2.compute.amazonaws.com/mithuntechnologies/repository/flipkart-snapshot/</url>
-	    </snapshotRepository>
-	</distributionManagement>
 	
 	<build>
 		<finalName>maven-web-application</finalName>
