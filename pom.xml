@@ -5,7 +5,7 @@
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	<version>0.1.1-SNAPSHOT</version>
+	<version>0.1.1-SNAPSHOTS</version>
 	
 	<name>Maven Web Application</name>
 	<url>http://mithuntechnologies.com</url>
@@ -22,7 +22,8 @@
 		<spring.version>5.0.2.RELEASE</spring.version>
 		<junit.version>4.12</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://localhost:9000/</sonar.host.url>
+		<sonar.host.url>http://ec2-18-219-143-228.us-east-2.compute.amazonaws.com:9000
+</sonar.host.url>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -85,16 +86,20 @@
 
 	</dependencies>
 	
+	<distributionManagement>
+	<snapshotRepository>
+        <id>snapshots</id>
+        <name>jayaram-PC-snapshots</name>
+        <url>http://localhost:9000</url>
+    </snapshotRepository>
+    <repository>
+        <id>central</id>
+        <name>jayaram-PC-releases</name>
+        <url>http://localhost:9000</url>
+    </repository>
+</distributionManagement>
 	
 	<build>
-		<plugin>
-    <groupId>org.wildfly.plugins</groupId>
-    <artifactId>wildfly-maven-plugin</artifactId>
-    <version>2.0.0.Final</version>
-    <configuration>
-        <filename>${project.build.finalName}.war</filename>
-    </configuration>
-</plugin>
 		<finalName>maven-web-application</finalName>
 		<plugins>
 			<plugin>
