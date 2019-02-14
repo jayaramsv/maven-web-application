@@ -89,12 +89,12 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://localhost:8081/repository/maven-releases/</url>
+	      <url>http://ec2-3-16-1-212.us-east-2.compute.amazonaws.com:8081/repository/jayaram-relese/</url>
 	    </repository>
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://localhost:8081/repository/maven-snapshots/</url>
+	      <url>http://ec2-3-16-1-212.us-east-2.compute.amazonaws.com:8081/repository/jayaram-snapshot/</url>
 	    </snapshotRepository>
 	</distributionManagement>
 	
