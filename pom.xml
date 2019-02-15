@@ -89,7 +89,7 @@
 	<distributionManagement>
 	<snapshotRepository>
         <id>snapshots</id>
-        <name>jayaram-PC-snapshots</name>
+        <name>jayaram-PC-snapshots is different</name>
         <url>http://localhost:9000</url>
     </snapshotRepository>
     <repository>
